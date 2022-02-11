@@ -3,6 +3,7 @@
 I will recommend to use Microsoft teams.
 
 **What are the Microsoft Teams features?**
+
 Microsoft Teams is a persistent chat-based collaboration platform complete with document sharing, online meetings, and many more extremely useful features for business communications.
 
 **Teams and channels** : Teams are made up of channels, which are conversation boards between teammates.
