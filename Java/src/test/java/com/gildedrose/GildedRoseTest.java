@@ -70,4 +70,12 @@ class GildedRoseTest {
         app.updateQuality();
         assertEquals(22,app.items[0].quality);
     }
+
+    @Test
+    void ConjuredTestItemQuality(){
+        Item[] items = new Item[] { new Item("Conjured Aged Brie", 7, 20) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertEquals(18,app.items[0].quality);
+    }
 }
