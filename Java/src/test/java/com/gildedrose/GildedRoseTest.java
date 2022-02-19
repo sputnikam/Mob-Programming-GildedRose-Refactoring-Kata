@@ -11,7 +11,7 @@ class GildedRoseTest {
         Item[] items = new Item[] { new Item("foo", 0, 0) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
-        assertEquals("fixme", app.items[0].name);
+        assertEquals("foo", app.items[0].name);
     }
 
     /**
@@ -53,5 +53,21 @@ class GildedRoseTest {
         GildedRose app = new GildedRose(items);
         app.updateQuality();
         assertEquals(21, app.items[0].quality);
+    }
+
+    @Test
+    void BackStageTestCaseQuality(){
+        Item[] items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 2, 20) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertEquals(23,app.items[0].quality);
+    }
+
+    @Test
+    void BackStageTestCaseQualityWithSellin7(){
+        Item[] items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 7, 20) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertEquals(22,app.items[0].quality);
     }
 }
