@@ -30,4 +30,28 @@ class GildedRoseTest {
         int dropAfterSellIn = qualitySellIn0d - qualitySellInPast1d;
         assertEquals(dropAfterSellIn, dropBeforeSellIn * 2, "Quality should degrade twice as fast after sell by date");
     }
+
+    @Test
+    void testQualityisNeverNegative(){
+        Item[] items = new Item[] { new Item("foo", 1, 1) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertEquals(0, app.items[0].quality);
+    }
+
+    @Test
+    void testSellInDecreases(){
+        Item[] items = new Item[] { new Item("foo", 2, 0) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertEquals(1, app.items[0].sellIn);
+    }
+
+    @Test
+    void testAgedBrieQuality(){
+        Item[] items = new Item[] { new Item("Aged Brie", 2, 20) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertEquals(21, app.items[0].quality);
+    }
 }
