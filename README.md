@@ -1,3 +1,7 @@
+Video Link of team creating unit tests, refactoring code, and adding new feature/"Conjured" test method:
+
+https://kennesawedu-my.sharepoint.com/:v:/g/personal/mgouni_students_kennesaw_edu/EfQPyoDp6L1LgJJH5IpDxX8BZrGnqGBK8gKwkVbxD96WeA
+
 **What tool (s) will you use to enable excellent f-2-f-like collaboration?**
 
 I will recommend to use Microsoft teams.
@@ -21,3 +25,5 @@ Microsoft Teams is a persistent chat-based collaboration platform complete with 
 **Audio conferencing** : This is a feature you won’t find in many collaboration platforms. With audio conferencing, anyone can join an online meeting via phone. With a dial-in number that spans hundreds of cities, even users that are on the go can participate with no internet required. Note this requires additional licensing.
 
 **Full telephony** : That’s right! The days of seeking VoIP vendors and overspending on a phone system are finally over. Microsoft  365 Business Voice can completely replace your business’ existing phone system. Note this requires additional licensing. 
+
+
